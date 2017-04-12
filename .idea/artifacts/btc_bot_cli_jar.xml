@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="btc_bot_cli:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/btc_bot_cli_jar</output-path>
+    <root id="archive" name="btc_bot_cli.jar">
+      <element id="module-output" name="btc_bot_cli" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../github/consoleui/build/libs/consoleui-all-0.0.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jline-3.2.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/retrofit-2.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/okhttp-3.5.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/okio-1.11.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jansi-1.11.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../github/btc_e_assist_api/TradeApi.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

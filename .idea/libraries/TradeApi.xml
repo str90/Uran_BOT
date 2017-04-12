@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="TradeApi">
+    <CLASSES />
+    <JAVADOC>
+      <root url="file://$PROJECT_DIR$/../../github/btc_e_assist_api/doc" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>
