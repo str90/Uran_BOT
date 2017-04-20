@@ -53,16 +53,19 @@ public class HandTrader {
             }
             if(currentAction.equals("fullsell")) {
                 System.out.printf("You`re going to sell all your second currency, proceed ? Y/N\n$>");
-                if(getDecision.equals("Y")) {
+                String decision = getDecision.next();
+                if(decision.equals("Y")) {
                     forSimpleTrade.tryMaximumSell(currentPair);
                 }
                 else System.out.printf("Sell cancelled\n");
             }
             if(currentAction.equals("fullbuy")) {
                 System.out.printf("You`re going to full buy currency, proceed ? Y/N\n$>");
-                if(getDecision.equals("Y")) {
+                String decision = getDecision.next();
+                if(decision.equals("Y")) {
                     forSimpleTrade.tryMaximumBuy(currentPair, reuseMillis);
                 }
+                else System.out.printf("Buy cancelled\n");
             }
             if(currentAction.equals("firstbalance")) {
                 System.out.printf("Your first currency active balance is %s %S\n\n", forSimpleTrade.getInfo.getBalance(currentPairDivided[0]), currentPairDivided[0]);
