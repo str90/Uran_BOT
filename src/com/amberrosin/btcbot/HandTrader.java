@@ -15,6 +15,7 @@ public class HandTrader {
     private String[] currentPairDivided = new String[2];
     private String apiKey = new String();
     private String apiSecret = new String();
+    private String decision = new String();
     private boolean exit = false;
 
     HandTrader(String apikey, String apisecret) {
@@ -53,16 +54,17 @@ public class HandTrader {
             }
             if(currentAction.equals("fullsell")) {
                 System.out.printf("You`re going to sell all your second currency, proceed ? Y/N\n$>");
-                if(getDecision.equals("Y")) {
-                    forSimpleTrade.tryMaximumSell(currentPair);
-                }
+                decision = getDecision.nextLine();
+                if(decision.equals("Y")) forSimpleTrade.tryMaximumSell(currentPair);
                 else System.out.printf("Sell cancelled\n");
+                decision = "p";
             }
             if(currentAction.equals("fullbuy")) {
                 System.out.printf("You`re going to full buy currency, proceed ? Y/N\n$>");
-                if(getDecision.equals("Y")) {
-                    forSimpleTrade.tryMaximumBuy(currentPair, reuseMillis);
-                }
+                decision = getDecision.nextLine();
+                if(decision.equals("Y")) forSimpleTrade.tryMaximumBuy(currentPair, reuseMillis);
+                else System.out.printf("Buy cancelled\n");
+                decision = "p";
             }
             if(currentAction.equals("firstbalance")) {
                 System.out.printf("Your first currency active balance is %s %S\n\n", forSimpleTrade.getInfo.getBalance(currentPairDivided[0]), currentPairDivided[0]);
