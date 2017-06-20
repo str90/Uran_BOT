@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="btc_e_assist_api">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../github/btc_e_assist_api" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$PROJECT_DIR$/../../github/btc_e_assist_api/doc" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../github/btc_e_assist_api/src" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/../../github/btc_e_assist_api" recursive="false" />
+  </library>
+</component>

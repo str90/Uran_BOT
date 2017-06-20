@@ -8,8 +8,8 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="1.8 (1)" jdkType="JavaSDK" />
-    <orderEntry type="library" name="TradeApi" level="project" />
+    <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
+    <orderEntry type="library" exported="" name="btc_e_assist_api" level="project" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
